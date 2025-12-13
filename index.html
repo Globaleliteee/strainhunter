@@ -83,6 +83,7 @@
         -webkit-tap-highlight-color: transparent;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
+        overscroll-behavior-y: none; /* Prevents whole page bounce on iOS */
       }
 
       html.dark body {
@@ -152,6 +153,11 @@
         background: rgba(20, 20, 20, 0.7);
         border-bottom: 1px solid rgba(255, 255, 255, 0.05);
       }
+
+      /* iOS Smooth Scroll Fix */
+      .ios-scroll {
+        -webkit-overflow-scrolling: touch;
+      }
     </style>
 
 <link rel="stylesheet" href="/index.css">
@@ -170,7 +176,7 @@
   }
 }
 </script>
-  <script type="module" crossorigin src="/strainhunter/assets/index-Dt0ILaIc.js"></script>
+  <script type="module" crossorigin src="/strainhunter/assets/index-C9B_DcJz.js"></script>
 </head>
   <body>
     <div id="root"></div>
